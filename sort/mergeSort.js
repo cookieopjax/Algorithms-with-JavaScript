@@ -1,14 +1,14 @@
 // merge 2 sorted array
 function merge(arr1, arr2) {
-  let result = []
+  let merged = []
   let i = 0
   let j = 0
   while(i < arr1.length && j < arr2.length) {
     if (arr1[i] <= arr2[j]) {
-      result.push(arr1[i])
+      merged.push(arr1[i])
       i++
     } else {
-      result.push(arr2[j])
+      merged.push(arr2[j])
       j++
     } 
   }
@@ -18,6 +18,6 @@ function merge(arr1, arr2) {
 }
 
 let arr1 = [2, 4, 6, 11, 14, 18]
-let arr2 = [1, 3, 5, 8, 9, 10]
+let arr2 = [1, 3, 5, 9, 10]
 
 console.log(merge(arr1, arr2))
